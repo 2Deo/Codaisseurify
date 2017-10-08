@@ -9,6 +9,10 @@
 song1 = Song.create!( { name: "One More Kiss", album: "From Amsterdam with Love", artist: "Johnny Delafontaine", year: 2049} )
 song2 = Song.create!( { name: "Cigarettes and Coffee", album: "Bleeding with your tears", artist: "Lady Vaga", year: 2023} )
 song3 = Song.create!( { name: "My Little Pony", album: "Pony Massacre Deluxe", artist: "Mary Jane", year: 2032} )
+song4 = Song.create!( { name: "Heartless soul", album: "Pony Massacre Deluxe", artist: "Mary Jane", year: 2032} )
+song5 = Song.create!( { name: "Six Inch Lie", album: "Bleeding with your tears", artist: "Lady Vaga", year: 2023} )
+song6 = Song.create!( { name: "Never again", album: "From Amsterdam with Love", artist: "Johnny Delafontaine", year: 2049} )
+
 
 artist1 = Artist.create!( { name: "Johnny Delafontaine", song: "One More Kiss", image_url: "http://www.20min.ch/dyim/9abc18/M600,1000/images/content/1/0/6/10620881/5/topelement.jpg"} )
 artist2 = Artist.create!( { name: "Lady Vaga", song: "Cigarettes and Coffee", image_url: "https://i.ytimg.com/vi/DIzeeGpwkVM/hqdefault.jpg"} )
