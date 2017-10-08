@@ -14,6 +14,6 @@ song5 = Song.create!( { name: "Six Inch Lie", album: "Bleeding with your tears",
 song6 = Song.create!( { name: "Never again", album: "From Amsterdam with Love", artist: "Johnny Delafontaine", year: 2049} )
 
 
-artist1 = Artist.create!( { name: "Johnny Delafontaine", song: "One More Kiss", image_url: "http://www.20min.ch/dyim/9abc18/M600,1000/images/content/1/0/6/10620881/5/topelement.jpg"} )
-artist2 = Artist.create!( { name: "Lady Vaga", song: "Cigarettes and Coffee", image_url: "https://i.ytimg.com/vi/DIzeeGpwkVM/hqdefault.jpg"} )
-artist3 = Artist.create!( { name: "Mary Jane", song: "My Little Pony", image_url: "https://c1.staticflickr.com/3/2858/13394294324_c6bf58b949_b.jpg"} )
+artist1 = Artist.create!( { name: "Johnny Delafontaine", image_url: "http://www.20min.ch/dyim/9abc18/M600,1000/images/content/1/0/6/10620881/5/topelement.jpg"} )
+artist2 = Artist.create!( { name: "Lady Vaga", image_url: "https://i.ytimg.com/vi/DIzeeGpwkVM/hqdefault.jpg"} )
+artist3 = Artist.create!( { name: "Mary Jane", image_url: "https://c1.staticflickr.com/3/2858/13394294324_c6bf58b949_b.jpg"} )
