@@ -22,5 +22,7 @@ Song.create!([
 { name: "Heartless soul", album: "Pony Massacre Deluxe", artist: artist3, year: 2032},
 { name: "Six Inch Lie", album: "Bleeding with your tears", artist: artist2, year: 2023},
 { name: "Never again", album: "From Amsterdam with Love", artist: artist1, year: 2049},
-
   ])
+
+songs_count = Artist.count
+puts "#{songs_count} songs were created."
