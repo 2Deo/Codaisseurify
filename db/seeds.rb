@@ -26,3 +26,8 @@ Song.create!([
 
 songs_count = Artist.count
 puts "#{songs_count} songs were created."
+
+#Photos
+photo1 = Photo.create!(remote_image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1507880325/artist1_cfe9la.jpg")
+photo2 = Photo.create!(remote_image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1507880325/artist2_qjtyna.jpg")
+photo3 = Photo.create!(remote_image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1507880326/artist3_ul4vwx.jpg")
