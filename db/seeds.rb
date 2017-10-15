@@ -20,7 +20,7 @@ Song.create!([
 { name: "Cigarettes and Coffee", album: "Bleeding with your tears", artist: artist2, year: 2023},
 { name: "My Little Pony", album: "Pony Massacre Deluxe", artist: artist3, year: 2032},
 { name: "Heartless soul", album: "Pony Massacre Deluxe", artist: artist3, year: 2032},
-{ name: "Six Inch Lie", album: "Bleeding with your tears", artist: artist2, year: 2023},
+{ name: "Six Inch Lie", album: "Bleeding with your tears", artist:,m artist2, year: 2023},
 { name: "Never again", album: "From Amsterdam with Love", artist: artist1, year: 2049},
   ])
 
