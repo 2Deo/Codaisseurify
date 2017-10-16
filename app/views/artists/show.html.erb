@@ -4,11 +4,12 @@
 <h1><%= @artist.name %></h1>
 <%= image_tag @artist.image_url %>
 
-  <!-- Listing songs according to the current artist -->
+
   <h2>List of songs<h2>
   <% if @artist.songs.any? %>
   <h3><% @artist.songs.each do |song| %></h3>
   <p><%= song.name %></p>
+  <%= link_to "Delete This Song", song, method: :delete %>
     <% end %>
   <% else %>
   <p>This Artist has no songs.</p>
@@ -16,4 +17,5 @@
 
     <hr>
 
-    <%= link_to "Add a New Song", new_song_path %>
+    <%= link_to "Add a New Song", new_artist_song_path(@artist) %>
+    <%= link_to "Delete this Artist", artist_path(@artist.id), method: :delete %>

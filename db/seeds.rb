@@ -10,24 +10,19 @@ Artist.destroy_all
 
 artist1 = Artist.create!( { name: "Johnny Delafontaine", image_url: "http://www.20min.ch/dyim/9abc18/M600,1000/images/content/1/0/6/10620881/5/topelement.jpg"} )
 artist2 = Artist.create!( { name: "Lady Vaga", image_url: "https://i.ytimg.com/vi/DIzeeGpwkVM/hqdefault.jpg"} )
-artist3 = Artist.create!( { name: "Mary Jane", image_url: "https://c1.staticflickr.com/3/2858/13394294324_c6bf58b949_b.jpg"} )
+artist3 = Artist.create!( { name: "Mary Jane", image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1508159059/artist3_saecjf.jpg"} )
 
-artists_count = Artist.count
-puts "#{artists_count} artists were created."
 
 Song.create!([
 { name: "One More Kiss", album: "From Amsterdam with Love", artist: artist1, year: 2049 },
 { name: "Cigarettes and Coffee", album: "Bleeding with your tears", artist: artist2, year: 2023},
 { name: "My Little Pony", album: "Pony Massacre Deluxe", artist: artist3, year: 2032},
 { name: "Heartless soul", album: "Pony Massacre Deluxe", artist: artist3, year: 2032},
-{ name: "Six Inch Lie", album: "Bleeding with your tears", artist:,m artist2, year: 2023},
+{ name: "Six Inch Lie", album: "Bleeding with your tears", artist: artist2, year: 2023},
 { name: "Never again", album: "From Amsterdam with Love", artist: artist1, year: 2049},
   ])
 
-songs_count = Artist.count
-puts "#{songs_count} songs were created."
 
-#Photos
 photo1 = Photo.create!(remote_image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1507880325/artist1_cfe9la.jpg")
 photo2 = Photo.create!(remote_image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1507880325/artist2_qjtyna.jpg")
-photo3 = Photo.create!(remote_image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1507880326/artist3_ul4vwx.jpg")
+photo3 = Photo.create!(remote_image_url: "https://res.cloudinary.com/dfxtnhrcg/image/upload/v1508159059/artist3_saecjf.jpg")

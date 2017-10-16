@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
   root "artists#index"
 
-    # resources :artists, only: [:show]
-    # resources :songs
+  resources :artists do
+  resources :songs
 
-  get "artists" => "artists#index"
-  get "songs/new" => "songs#new",as: :new_song
-  get "artists/:id" => "artists#show", as: :artist
+  end
 
-  get "songs" => "artists#index"
+  resources :songs, except: [:new, :create]
+
+
+  # # get "artists" => "artists#index"
+  # get "artist/:id/songs/new" => "songs#new",as: :new_song
+  # # get "artists/:id" => "artists#show"
+  # get "songs" => "artists#index"
 
 end
